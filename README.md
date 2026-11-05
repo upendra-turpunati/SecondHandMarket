@@ -1,32 +1,90 @@
-# React + TypeScript + Vite
+# SecondHandMarket – Second-Hand Electronics Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive web application that allows users to browse, search, and list pre-owned electronic products.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+SecondHandMarket is a frontend marketplace application designed to make buying and selling second-hand electronics easier. Users can explore available products, apply filters, view product details, save favourites, and create their own product listings.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Browse second-hand electronic products.
+- Search products by name.
+- Filter products by category, city, and condition.
+- Sort product listings.
+- View detailed product information.
+- Add and remove products from favourites.
+- Register and log in using a demo authentication interface.
+- Create product listings with image uploads.
+- Manage seller listings through a seller dashboard.
+- Store application data using browser Local Storage.
 
-## Expanding the Oxlint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- React.js
+- TypeScript
+- Tailwind CSS
+- React Router
+- Vite
+- Browser Local Storage
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/upendra-turpunati/SecondHandMarket.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd SecondHandMarket
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## Project Structure
+
+```text
+SecondHandMarket/
+├── public/
+├── src/
+├── index.html
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── README.md
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Data Storage
+
+This project uses browser Local Storage for saving application data. It is a frontend demonstration project and does not currently use a connected backend or database.
+
+## Author
+
+**Upendra Turpunati**
+
+GitHub: https://github.com/upendra-turpunati
